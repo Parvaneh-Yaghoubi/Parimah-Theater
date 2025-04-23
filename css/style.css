@@ -1,0 +1,67 @@
+
+body {
+    background: radial-gradient(ellipse at center, #111 0%, #000 100%);
+    color: white;
+    font-family: 'Sofia', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 8px #000;
+}
+.cinema-frame {
+    position: relative;
+    padding: 20px;
+    margin-top: 0;
+    border: 10px double #ffcc00;
+    border-radius: 20px;
+    box-shadow: 0 0 60px rgba(255, 255, 0, 0.4);
+    background-color: #222;
+}
+button:hover{
+    transform: scale(1.1);
+}
+button {
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 1em;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #000;
+    transition: transform 0.2s;
+}
+#blinkBorder {
+    animation: blinkBorder 1s steps(1, end) infinite;
+    border: 10px dotted rgb(240, 15, 15);
+    margin: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 60px rgba(255, 255, 0, 0.4);
+    display: inline-block;
+}
+  
+@keyframes blinkBorder {
+    0%, 100% {
+        border-color: rgb(247, 8, 28);
+    }
+    50% {
+        border-color: transparent;
+    }
+}
+
+#btu{
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
