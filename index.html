@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parimah Theater</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+    <link rel="icon" href="images/Movies-icon.png">
+</head>
+<body>
+    <section>
+      <div class="cinema-frame">
+        <h1>Parimah Theater 🎭🎬</h1>
+        <h2><marquee>Welcome To The Parimah Theater 📽</marquee></h2>
+        <p style="text-align: center; margin-bottom: 20px; font-size: large;">Now Playing: Anne of Green Gables 👩‍🦰</p>
+        <div id="blinkBorder">
+            <video id="trailer" controls width="640" height="360">
+                <source src="media/trailer.mp4" type="video/mp4">
+                Your browser doesn't support the vodeo tag.
+            </video>   
+        </div><br>
+        <div id="btu">
+          <button style="margin-top: 20px;" onclick="playAgain()">🔁 Play Again</button>
+          <button style="margin-top: 20px;" onclick="rateMovie()">⭐ Rate Movie</button>
+        </div>
+      </div>
+    </section>
+    <script>
+        function playAgain() {
+          const video = document.getElementById('trailer');
+          video.currentTime = 0;
+          video.play();
+        }
+        function rateMovie() {
+          const rating = prompt("Rate this movie from 1 to 5 ⭐:");
+          if (rating) {
+            alert(`Thanks for rating! You gave it ${rating} ⭐`);
+          }
+        }
+    </script>
+</body>
+</html>
