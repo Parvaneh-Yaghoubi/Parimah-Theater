@@ -71,10 +71,8 @@ video {
     display: block;
     margin: auto;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     video {
-        height: 220px;
-        object-fit: cover;
+        height: 30vh;
     }
 }
