@@ -47,13 +47,13 @@ button {
 #blinkBorder {
     animation: blinkBorder 1s steps(1, end) infinite;
     border: 10px dotted rgb(240, 15, 15);
-    margin: 50px;
     padding: 10px;
     border-radius: 20px;
     box-shadow: 0 0 60px rgba(255, 255, 0, 0.4);
     display: inline-block;
     width: 100%;
     max-width: 600px;
+    margin: 40px auto;
 }
   
 @keyframes blinkBorder {
