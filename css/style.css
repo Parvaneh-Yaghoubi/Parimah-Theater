@@ -1,4 +1,8 @@
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
     background: radial-gradient(ellipse at center, #111 0%, #000 100%);
     color: white;
