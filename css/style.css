@@ -59,14 +59,22 @@ button {
         border-color: transparent;
     }
 }
-@media (max-width: 600px) {
-    video {
-        height: 200px;
-    }
-}
 #btu{
     display: flex; 
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 0;
+}
+video {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    video {
+        height: 220px;
+        object-fit: cover;
+    }
 }
