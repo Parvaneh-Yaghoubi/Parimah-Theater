@@ -67,12 +67,12 @@ button {
 }
 video {
     width: 100%;
-    max-width: 700px;
     height: auto;
-    border-radius: 10px;
+    display: block;
+    margin: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     video {
         height: 220px;
         object-fit: cover;
