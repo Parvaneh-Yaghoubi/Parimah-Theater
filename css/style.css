@@ -25,8 +25,6 @@ h1 {
     border-radius: 20px;
     box-shadow: 0 0 60px rgba(255, 255, 0, 0.4);
     background-color: #222;
-    width: 100%;
-    max-width: 960px;
 }
 button:hover{
     transform: scale(1.1);
@@ -61,7 +59,11 @@ button {
         border-color: transparent;
     }
 }
-
+@media (max-width: 600px) {
+    video {
+        height: 200px;
+    }
+}
 #btu{
     display: flex; 
     justify-content: center;
